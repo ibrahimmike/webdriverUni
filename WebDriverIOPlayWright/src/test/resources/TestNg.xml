@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="com.sauce"  >
+<!--    <listeners>-->
+<!--        <listener class-name="listeners.ListenersClass"/>-->
+
+<!--    </listeners>-->
+    <test name="Login and logout"  thread-count="6" parallel="methods" >
+        <classes >
+            <class name="tests.HomePageTests"/>
+            <class name="tests.ClickOnButtonsTest"/>
+            <class name="tests.ToDoListTests"/>
+
+
+        </classes>
+    </test>
+
+</suite>
